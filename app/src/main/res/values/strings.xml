@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">RDV Manager</string>
+    <string name="TvNoItems">No RDVs</string>
+
+    <string name="TvAddDescription">Add description</string>
+    <string name="TvContactName">Contact name</string>
+    <string name="btnContact">Pick contact</string>
+    <string name="TvDate">Add date</string>
+    <string name="TvTime">Add time</string>
+    <string name="TvAddress">Add address</string>
+    <string name="TvNum">Add phone number</string>
+    <string name="btnCall">Call number</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnSave">Save</string>
+
+    <string name="TvTimeItem">Time :</string>
+    <string name="TvAddressItem">address :</string>
+    <string name="TvNumItem">Number :</string>
+
+    <string name="TvMusic">Music</string>
+    <string name="TvColors">Colors</string>
+    <string name="TvRed">Red Color</string>
+    <string name="TvBlue">Blue Color</string>
+    <string name="TvGreen">Green Color</string>
+    <string name="TvOneD">1 day before</string>
+    <string name="TvTwoD">2 days before</string>
+    <string name="TvOneW">1 week before</string>
+
+    <string name="TvLanguage">Languages</string>
+    <string name="TvEnglish">English</string>
+    <string name="TvFrench">French</string>
+
+    <string name="textNotifOneD">Notification 1 day before RDV</string>
+    <string name="textNotifTwoD">Notification 2 days before RDV</string>
+    <string name="textNotifOneW">Notification 1 week before RDV</string>
+</resources>

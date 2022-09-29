@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_RDV_details">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="411dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="163dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="pickDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContact"
+        tools:ignore="DuplicateClickableBoundsCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="163dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/TvDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnPickDate"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="163dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/TvTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnPickTime"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/btnPickTime"
+        android:layout_width="163dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="pickTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPickDate"
+        tools:ignore="DuplicateClickableBoundsCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="175dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
+        android:hint="@string/TvAddDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etContact"
+        android:layout_width="179dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/TvContactName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDescription"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnPickContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:onClick="pickContact"
+        android:text="@string/btnContact"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/etContact"
+        app:layout_constraintTop_toTopOf="@+id/etContact" />
+
+    <Button
+        android:id="@+id/btnAddRDV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="73dp"
+        android:onClick="saveRDV"
+        android:text="@string/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onCancelClick"
+        android:text="@string/btnCancel"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddRDV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="175dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/TvAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPickTime"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnGoogleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Google Maps"
+        android:onClick="launchMaps"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/etAddress"
+        app:layout_constraintTop_toTopOf="@+id/etAddress" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="175dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/TvNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnPhoneCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:onClick="callPhoneNumber"
+        android:text="@string/btnCall"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/etPhoneNumber"
+        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

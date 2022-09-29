@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Manager de RDV</string>
+    <string name="TvNoItems">Pas de RDVs</string>
+
+    <string name="TvAddDescription">Ajouter description</string>
+    <string name="TvContactName">Nom du contact</string>
+    <string name="btnContact">Selectionner contact</string>
+    <string name="TvDate">Ajouter date</string>
+    <string name="TvTime">Ajouter heure</string>
+    <string name="TvAddress">Ajouter addresse</string>
+    <string name="TvNum">Ajouter numéro</string>
+    <string name="btnCall">Appeler numéro</string>
+    <string name="btnCancel">Annuler</string>
+    <string name="btnSave">Sauvegarder</string>
+
+    <string name="TvTimeItem">Heure:</string>
+    <string name="TvAddressItem">addresse:</string>
+    <string name="TvNumItem">Numéro:</string>
+
+    <string name="TvMusic">Musique</string>
+    <string name="TvColors">Couleurs</string>
+    <string name="TvRed">Couleur Rouge</string>
+    <string name="TvBlue">Couleur Bleue</string>
+    <string name="TvGreen">Couleur verte</string>
+    <string name="TvOneD">1 jour avant</string>
+    <string name="TvTwoD">2 jours avant</string>
+    <string name="TvOneW">1 semaine avant</string>
+
+    <string name="TvLanguage">Langages</string>
+    <string name="TvEnglish">Anglais</string>
+    <string name="TvFrench">Français</string>
+
+    <string name="textNotifOneD">Notification 1 jour avant le RDV</string>
+    <string name="textNotifTwoD">Notification 2 jours avant le RDV</string>
+    <string name="textNotifOneW">Notification 1 semaine avant le RDV</string>
+</resources>

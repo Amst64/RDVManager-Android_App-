@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvIdDeItem"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:padding="3dp"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tvIdDeItem"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvIdDeItem"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/time"
+        android:layout_below="@id/description"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-20dp"
+        android:layout_toLeftOf="@id/tvDate"
+        android:gravity="center"
+        android:text="Date :"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/contact"
+        android:layout_below="@+id/tvDate"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="-20dp"
+        android:layout_toLeftOf="@id/time"
+        android:gravity="center"
+        android:text="@string/TvTimeItem"
+        android:textAlignment="gravity"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/address"
+        android:layout_below="@+id/time"
+        android:layout_marginRight="-20dp"
+        android:layout_toLeftOf="@id/contact"
+        android:gravity="center"
+        android:text="Contact :"
+        android:textAlignment="gravity"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/phone_number"
+        android:layout_below="@+id/contact"
+        android:layout_marginRight="-20dp"
+        android:layout_toLeftOf="@id/address"
+        android:gravity="center"
+        android:text="@string/TvAddressItem"
+        android:textAlignment="gravity"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_alignBottom="@id/phone_number"
+        android:layout_marginRight="-20dp"
+        android:layout_toLeftOf="@id/phone_number"
+        android:gravity="center"
+        android:text="@string/TvNumItem"
+        android:textAlignment="gravity"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvIdDeItem"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvIdDeItem"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvIdDeItem"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvIdDeItem"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="3dp"
+        android:visibility="visible" />
+
+</RelativeLayout>
